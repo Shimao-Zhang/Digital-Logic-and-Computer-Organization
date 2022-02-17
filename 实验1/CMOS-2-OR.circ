@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.16.1.3.jar" version="1.0">
+This file is intended to be loaded by Logisim http://logisim.altervista.org
+<lib desc="#Wiring" name="0">
+    <tool name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#TTL" name="2"/>
+  <lib desc="#Plexers" name="3"/>
+  <lib desc="#Arithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="7" map="Button2" name="Poke Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <sep/>
+    <tool lib="7" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <wire from="(290,60)" to="(620,60)"/>
+    <wire from="(620,60)" to="(620,80)"/>
+    <wire from="(290,40)" to="(290,60)"/>
+    <wire from="(290,60)" to="(290,80)"/>
+    <wire from="(150,100)" to="(270,100)"/>
+    <wire from="(100,100)" to="(150,100)"/>
+    <wire from="(290,120)" to="(290,200)"/>
+    <wire from="(200,320)" to="(440,320)"/>
+    <wire from="(200,220)" to="(200,320)"/>
+    <wire from="(200,220)" to="(270,220)"/>
+    <wire from="(100,220)" to="(200,220)"/>
+    <wire from="(290,270)" to="(460,270)"/>
+    <wire from="(290,240)" to="(290,270)"/>
+    <wire from="(460,270)" to="(460,300)"/>
+    <wire from="(460,270)" to="(570,270)"/>
+    <wire from="(620,200)" to="(770,200)"/>
+    <wire from="(620,120)" to="(620,200)"/>
+    <wire from="(620,200)" to="(620,300)"/>
+    <wire from="(570,100)" to="(570,270)"/>
+    <wire from="(570,100)" to="(600,100)"/>
+    <wire from="(570,270)" to="(570,320)"/>
+    <wire from="(570,320)" to="(600,320)"/>
+    <wire from="(620,340)" to="(620,400)"/>
+    <wire from="(460,340)" to="(460,400)"/>
+    <wire from="(460,400)" to="(620,400)"/>
+    <wire from="(290,400)" to="(460,400)"/>
+    <wire from="(290,390)" to="(290,400)"/>
+    <wire from="(150,100)" to="(150,370)"/>
+    <wire from="(150,370)" to="(270,370)"/>
+    <wire from="(290,400)" to="(290,460)"/>
+    <wire from="(290,270)" to="(290,350)"/>
+    <comp lib="7" loc="(313,106)" name="Text">
+      <a name="text" val="Q2"/>
+      <a name="font" val="Dialog plain 16"/>
+    </comp>
+    <comp lib="0" loc="(620,120)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(620,300)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(460,300)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(290,460)" name="Ground"/>
+    <comp lib="0" loc="(290,120)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="7" loc="(315,375)" name="Text">
+      <a name="text" val="Q1"/>
+      <a name="font" val="Dialog plain 16"/>
+    </comp>
+    <comp lib="0" loc="(770,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Z"/>
+      <a name="labelloc" val="east"/>
+      <a name="labelfont" val="Dialog plain 16"/>
+    </comp>
+    <comp lib="7" loc="(641,105)" name="Text">
+      <a name="text" val="Q6"/>
+      <a name="font" val="Dialog plain 16"/>
+    </comp>
+    <comp lib="0" loc="(100,220)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Y"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="Dialog plain 16"/>
+    </comp>
+    <comp lib="7" loc="(639,325)" name="Text">
+      <a name="text" val="Q5"/>
+      <a name="font" val="Dialog plain 16"/>
+    </comp>
+    <comp lib="0" loc="(290,350)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(100,100)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="X"/>
+      <a name="labelloc" val="west"/>
+      <a name="labelfont" val="Dialog plain 16"/>
+    </comp>
+    <comp lib="0" loc="(290,40)" name="Power"/>
+    <comp lib="7" loc="(313,225)" name="Text">
+      <a name="text" val="Q4"/>
+      <a name="font" val="Dialog plain 16"/>
+    </comp>
+    <comp lib="0" loc="(290,240)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="7" loc="(483,325)" name="Text">
+      <a name="text" val="Q3"/>
+      <a name="font" val="Dialog plain 16"/>
+    </comp>
+  </circuit>
+</project>
